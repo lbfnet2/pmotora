@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Cadastrados</title>
+</head>
+<body>
+    <h1>Dados Cadastrados</h1>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Destino</th>
+            <th>Peso</th>
+            <th>Valor</th>
+        </tr>
+        {% for dado in dados %}
+        <tr>
+            <td>{{ dado[1] }}</td>
+            <td>{{ dado[2] }}</td>
+            <td>{{ dado[3] }}</td>
+            <td>{{ dado[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Voltar para Cadastrar</a>
+</body>
+</html>
